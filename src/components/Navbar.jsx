@@ -38,9 +38,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/90 shadow-lg py-2' : 'bg-black py-4'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 shadow-lg py-2' : 'bg-black py-4'
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
@@ -55,7 +54,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="text-white hover:text-indigo-500 transition font-medium">Home</Link>
             <Link to="/destinations" className="text-white hover:text-indigo-500 transition font-medium">Destinations</Link>
-            <Link to="/chat" className="text-white hover:text-indigo-500 transition font-medium">Chat</Link>
+            <Link to="/review" className="text-white hover:text-indigo-500 transition font-medium">Review</Link>
             <Link to="/about" className="text-white hover:text-indigo-500 transition font-medium">About</Link>
 
             {/* Search */}
@@ -114,14 +113,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${
-            mobileMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="flex flex-col space-y-4 py-4">
             <Link to="/" className="text-white hover:text-indigo-500 transition font-medium">Home</Link>
             <Link to="/destinations" className="text-white hover:text-indigo-500 transition font-medium">Destinations</Link>
-            <Link to="/chat" className="text-white hover:text-indigo-500 transition font-medium">Chat</Link>
+            <Link to="/review" className="text-white hover:text-indigo-500 transition font-medium">Review</Link>
             <Link to="/about" className="text-white hover:text-indigo-500 transition font-medium">About</Link>
 
             {/* Mobile Search */}
